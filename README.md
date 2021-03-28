@@ -11,9 +11,10 @@ python -m unittest discover -s tests
 ## Space and Time Complexity
 ### Q1: Printing Depth of keys:
 **Time**: O(N), where N is the total number of key present in the nested dictionary.  
-We are visiting those key only once.    
+We are visiting those key only once.      
+
 **Space**: O(N^2), here we are creating new dictionary each time.  
-In worst case if the input is nested one after another ex:{'a':{'b':'c':{'d':1}}} then we n,n-1,n-2 dictionary are created, which equals to n*(n-1)/2, means O(N^2)
+In worst case if the input is nested one after another ex:{'a':{'b':'c':{'d':1}}} then we n+n-1+n-2..1 dictionary are created, which equals to n*(n-1)/2, means O(N^2)
   
 ### Q2: Printing Depth of keys and object members  
 **Time:** O(N), where N is the total number of key present in the nested dictionary and total member variables present.
